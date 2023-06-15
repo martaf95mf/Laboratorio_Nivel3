@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Samsung Desarrollo Full-Stack (Nivel 3). Laboratorio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="js/index.js" defer></script>
+        <script src="js/validation.js" defer></script>
+        <script src="https://kit.fontawesome.com/b37653d681.js"></script>
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+
+        <!-- MENU -->
+        <nav>
+            <div class="left-items">
+                <a class="item selected" href="registro.html">REGISTRO</a>
+                <a class="item" href="consulta.php">CONSULTA</a>
+            </div>
+            <a class="toggle" href="#" onclick="toggle();"><i class="fas fa-bars fa-2x"></i></a>
+        </nav>
+        
+        <!-- REGISTRATION FORM -->
+        <form id="registration" novalidate action="submit.php" method="POST">
+            <h1>Formulario de registro</h1>
+            <div class="name">
+                <label>Nombre
+                    <br>
+                    <input id="name" type="text" name="name" value="" pattern="[a-zA-Z ]+" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="apellido1">
+                <label>Primer apellido
+                    <br>
+                    <input id="apellido1" type="text" name="apellido1" value="" pattern="[a-zA-Z ]+" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="apellido2">
+                <label class="apellido2">Segundo apellido
+                    <br>
+                    <input id="apellido2" type="text" name="apellido2" value="" pattern="[a-zA-Z ]+" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="email">
+                <label>Email
+                    <br>
+                    <input id="email" type="email" name="email" value="" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="user">
+                <label>Usuario
+                    <br>
+                    <input id="user" type="text" name="user" value="" pattern="[a-zA-Z ]+" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="password">
+                <label>Contraseña
+                    <br>
+                    <input id="password" type="password" name="password" value="" minlength="4" maxlength="8" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="confirm">
+                <label>Confirme su contraseña
+                    <br>
+                    <input id="confirm" type="password" name="confirm" value=""  required/>
+                    <br>
+                </label>
+            </div>
+            <button class="submit" id="submit-button" type="submit" name="Enviar">ENVIAR</button>
+        </form>
+    </body>
+
+</html>

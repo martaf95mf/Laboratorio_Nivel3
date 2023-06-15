@@ -1,0 +1,124 @@
+body {
+    font-family: Arial;
+    background-color: #95acd9;
+}
+p {
+    display: block;
+    width: 278px;
+    margin: 3px auto;
+    font-size: 12px;
+    color:#08086b;
+} 
+h1 {
+    display: flex;
+    margin:0 auto;
+    height: 30px;
+    width: 285px;
+    line-height: 10px;
+    font-size: 23px;
+    color: #8181DB;
+}
+
+
+form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size:11.5px;
+    font-weight: 550;
+    background-color: #f1f2f59e;
+    border: 2px solid #031048;
+    border-radius: 5px;
+}
+	
+
+span {
+    display: flex;
+    margin: 0 auto;
+    width: 285px;
+    font-size: 10px;
+    color: #0a0909;
+}
+	
+
+.formContainer {
+    max-width: 340px;
+    margin: 0 auto;
+}
+	
+
+.formElement {
+    display: block;
+    margin: auto;
+    height: 32px;
+    width: 270px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #40465d;    
+    text-indent: 10px;
+    outline: none;
+    transition: 0.3s;
+	
+}
+	
+
+.inputContainer {
+    margin: 1em auto;
+    height: 70px;
+    display: block;
+}
+	
+
+.valid {
+    border-color: #50ce67;
+    border-radius: 3px;
+}
+	
+
+.invalid {
+    border-color: #fe5f55;
+    border-radius: 3px;
+}
+	
+
+.errorIcon {
+    background-image: url('images/error-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: 250px;
+    background-position-y: 10px;
+}
+	
+
+.successIcon {
+    background-image: url('images/success-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: 250px;
+    background-position-y: 10px;
+}
+	
+#button {
+    display: block;
+    width: 82%;
+    height: 40px;
+    margin: 15px auto 20px;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    background-color: #6c63ff;
+    border: 2px #090916 solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+	
+
+.borderColor {
+    background: #4b44d1 !important;
+}
+
